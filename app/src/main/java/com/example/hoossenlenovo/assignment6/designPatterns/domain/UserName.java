@@ -7,6 +7,7 @@ import java.io.Serializable;
  */
 public class UserName implements Serializable
 {
+<<<<<<< HEAD
     private Long id;
     private String firstName;
     private String lastName;
@@ -25,6 +26,20 @@ public class UserName implements Serializable
     public Long getId() {
         return id;
     }
+=======
+
+    private String firstName;
+    private String lastName;
+
+    public UserName()
+    {}
+
+    public UserName(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
     public String getFirstName() { return firstName; }
     public String getLastName() {
         return lastName;
@@ -34,13 +49,17 @@ public class UserName implements Serializable
 
     public UserName(Builder builder)
     {
+<<<<<<< HEAD
         this.id = builder.id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         this.firstName = builder.firstName;
         this.lastName = builder.lastName;
     }
 
     public static class Builder
     {
+<<<<<<< HEAD
         private Long id;
         private String firstName;
         private String lastName;
@@ -49,6 +68,12 @@ public class UserName implements Serializable
             this.id = value;
             return this;
         }
+=======
+        private String firstName;
+        private String lastName;
+
+
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         public Builder firstName(String value){
             this.firstName = value;
             return this;
@@ -59,7 +84,10 @@ public class UserName implements Serializable
         }
 
         public Builder copy(UserName value) {
+<<<<<<< HEAD
             this.id = value.id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
             this.firstName = value.firstName;
             this.lastName = value.lastName;
             return this;
@@ -70,6 +98,7 @@ public class UserName implements Serializable
         }
     }
 
+<<<<<<< HEAD
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -92,4 +121,6 @@ public class UserName implements Serializable
         result = 31 * result + (getLastName() != null ? getLastName().hashCode() : 0);
         return result;
     }
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 }

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+=======
+  <component name="Encoding">
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

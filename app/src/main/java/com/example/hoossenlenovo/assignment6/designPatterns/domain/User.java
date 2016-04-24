@@ -9,8 +9,12 @@ import java.io.Serializable;
  */
 public class User implements CloneObject, Serializable
 {
+<<<<<<< HEAD
     private Long id;
     private String userId;
+=======
+    private String id;
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
     private int age;
     private UserName uName;
 
@@ -21,9 +25,15 @@ public class User implements CloneObject, Serializable
 
     }
 
+<<<<<<< HEAD
     public User(Long id, String userId, int age, UserName uName) {
         this.id = id;
         this.userId = userId;
+=======
+    public User(String id, int age, UserName uName)
+    {
+        this.id = id;
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         this.age = age;
         this.uName = uName;
     }
@@ -32,8 +42,12 @@ public class User implements CloneObject, Serializable
     public int getAge() {
         return age;
     }
+<<<<<<< HEAD
     public String getUserId() {   return userId;  }
     public Long getId() {
+=======
+    public String getId() {
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         return id;
     }
     public UserName getUserName() {
@@ -43,7 +57,11 @@ public class User implements CloneObject, Serializable
     @Override
     public CloneObject createCopy()
     {
+<<<<<<< HEAD
         return new User(id,userId,age,uName);
+=======
+        return new User(id,age,uName);
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
     }
 
 
@@ -51,13 +69,17 @@ public class User implements CloneObject, Serializable
     public User(Builder builder)
     {
         this.id = builder.id;
+<<<<<<< HEAD
         this.userId = builder.userId;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         this.age = builder.age;
         this.uName = builder.uName;
     }
 
     public static class Builder
     {
+<<<<<<< HEAD
         private Long id;
         private String userId;
         private int age;
@@ -71,6 +93,16 @@ public class User implements CloneObject, Serializable
             this.userId = value;
             return this;
         }
+=======
+        private String id;
+        private int age;
+        private UserName uName;
+
+        public Builder id(String value){
+            this.id = value;
+            return this;
+        }
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         public Builder age(int value){
             this.age = value;
             return this;
@@ -82,7 +114,10 @@ public class User implements CloneObject, Serializable
 
         public Builder copy(User value) {
             this.id = value.id;
+<<<<<<< HEAD
             this.userId = value.userId;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
             this.age = value.age;
             this.uName = value.uName;
             return this;
@@ -99,6 +134,7 @@ public class User implements CloneObject, Serializable
         if (this == o) return true;
         if (!(o instanceof User)) return false;
 
+<<<<<<< HEAD
         User user = (User) o;
 
         if (getAge() != user.getAge()) return false;
@@ -117,4 +153,16 @@ public class User implements CloneObject, Serializable
         result = 31 * result + (uName != null ? uName.hashCode() : 0);
         return result;
     }
+=======
+        User role = (User) o;
+
+        if (getId() != null ? !getId().equals(role.getId()) : role.getId() != null) return false;
+        if (getAge() != 0 ?  getAge() != role.getAge() : role.getAge() != 0)
+            return false;
+        return !(getUserName() != null ? !getUserName().equals(role.getUserName()) : role.getUserName() != null);
+
+    }
+
+
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 }

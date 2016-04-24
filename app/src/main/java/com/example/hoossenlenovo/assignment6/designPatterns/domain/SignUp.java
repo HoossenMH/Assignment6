@@ -11,7 +11,10 @@ import java.io.Serializable;
 public class SignUp implements Serializable{
 
     private UserName uName;
+<<<<<<< HEAD
     private Long id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 
     private String username;
     private String password;
@@ -26,10 +29,16 @@ public class SignUp implements Serializable{
     public SignUp() {
     }
 
+<<<<<<< HEAD
     public SignUp(Long id,UserName uName, String username, String password, int age, String email, String gender, DateOfBirth dob) {
 
         this.uName = uName;
         this.id = id;
+=======
+    public SignUp(UserName uName, String username, String password, int age, String email, String gender, DateOfBirth dob) {
+
+        this.uName = uName;
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 
         this.username = username;
         this.password = password;
@@ -44,7 +53,10 @@ public class SignUp implements Serializable{
     public UserName getUName() {
         return uName;
     }
+<<<<<<< HEAD
     public Long getId() { return id; }
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 
     public String getUsername() {
         return username;
@@ -71,7 +83,10 @@ public class SignUp implements Serializable{
     public SignUp(Builder builder)
     {
 
+<<<<<<< HEAD
         this.id = builder.id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         this.uName = builder.uName;
 
         this.username = builder.username;
@@ -86,7 +101,10 @@ public class SignUp implements Serializable{
 
     public static class Builder
     {
+<<<<<<< HEAD
         private Long id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         private UserName uName;
 
         private String username;
@@ -98,10 +116,13 @@ public class SignUp implements Serializable{
         private DateOfBirth dob;
 
 
+<<<<<<< HEAD
         public Builder id(Long value){
             this.id = value;
             return this;
         }
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         public Builder uName(UserName value){
             this.uName = value;
             return this;
@@ -138,7 +159,10 @@ public class SignUp implements Serializable{
         }
 
         public Builder copy(SignUp value) {
+<<<<<<< HEAD
             this.id = value.id;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 
             this.uName = value.uName;
 
@@ -167,8 +191,11 @@ public class SignUp implements Serializable{
 
         if (getAge() != signUp.getAge()) return false;
         if (uName != null ? !uName.equals(signUp.uName) : signUp.uName != null) return false;
+<<<<<<< HEAD
         if (getId() != null ? !getId().equals(signUp.getId()) : signUp.getId() != null)
             return false;
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         if (getUsername() != null ? !getUsername().equals(signUp.getUsername()) : signUp.getUsername() != null)
             return false;
         if (getPassword() != null ? !getPassword().equals(signUp.getPassword()) : signUp.getPassword() != null)
@@ -177,14 +204,21 @@ public class SignUp implements Serializable{
             return false;
         if (getGender() != null ? !getGender().equals(signUp.getGender()) : signUp.getGender() != null)
             return false;
+<<<<<<< HEAD
         return getDob() != null ? getDob().equals(signUp.getDob()) : signUp.getDob() == null;
+=======
+        return !(getDob() != null ? !getDob().equals(signUp.getDob()) : signUp.getDob() != null);
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
 
     }
 
     @Override
     public int hashCode() {
         int result = uName != null ? uName.hashCode() : 0;
+<<<<<<< HEAD
         result = 31 * result + (getId() != null ? getId().hashCode() : 0);
+=======
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
         result = 31 * result + (getUsername() != null ? getUsername().hashCode() : 0);
         result = 31 * result + (getPassword() != null ? getPassword().hashCode() : 0);
         result = 31 * result + getAge();

@@ -24,7 +24,11 @@ public class UserFactoryImpl implements UserFactory{
     public User createUser(String id, int age, UserName uName) {
         User  user = new User
                 .Builder()
+<<<<<<< HEAD
                 .userId(UUID.randomUUID().toString())
+=======
+                .id(UUID.randomUUID().toString())
+>>>>>>> 18bfb1b06a979e4bb45b2817432811f956a8b05d
                 .age(age)
                 .uName(uName)
                 .build();
